@@ -22,3 +22,39 @@ source venv/bin/activate
 # Install requirements
 pip install -r requirements.txt
 
+# If some packages are missing, install them manually:
+pip install ase PySimpleGUI
+
+---
+
+## 🚀 Usage
+
+#Launch the toolkit with:
+python main.py
+
+#You will see a GUI with the following options:
+    Convert CIF to PDB
+    Clean a PDB file
+    Generate tleap input files
+    View molecules in VMD (if installed)
+
+---
+
+## 🧪 VMD Integration
+#If VMD is installed and available in your PATH, the app will allow you to open .pdb files in VMD for visualization.
+#Test VMD installation:
+vmd
+
+---
+
+## 🗂️ Project Structure
+
+amber-prep-toolkit/
+├── main.py
+├── modules/
+│   ├── converter.py
+│   ├── tleap_generator.py
+│   └── utils.py
+├── requirements.txt
+├── README.md
+└── venv/
