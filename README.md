@@ -14,7 +14,6 @@ A Python-based command-line and GUI application to streamline molecular dynamics
 
 ## ⚙️ Installation
 
-```bash
 # Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate
@@ -29,7 +28,6 @@ pip install ase PySimpleGUI
 
 ## 🚀 Usage
 
-```bash
 #Launch the toolkit with:
 python main.py
 
