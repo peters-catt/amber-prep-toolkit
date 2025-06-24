@@ -2,14 +2,14 @@
 
 A Python-based command-line and GUI application to streamline molecular dynamics (MD) simulations using AMBER.Created by **Weremito Peter**.
 
-## ✨ 機能
-
+## ✨ Features
+```bash
 - .cif または .mmCIF 結晶ファイルを .pdb に変換（ASE使用）
 - .pdb ファイルのクリーニングと修復
 - AMBER用の tleap.in 入力ファイルを生成
 - 分子の可視化（VMD使用、オプション）
 - PySimpleGUIを使ったGUI操作
-
+```
 ---
 
 ## ⚙️ Installation
