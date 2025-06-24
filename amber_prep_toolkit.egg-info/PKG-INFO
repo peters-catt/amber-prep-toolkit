@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: amber_prep_toolkit
+Version: 0.1
+Summary: A toolkit to prepare PDB/CIF files for AMBER MD simulations.
+Home-page: https://github.com/peters-catt/amber-prep-toolkit
+Author: peters-catt
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: biopython
+Requires-Dist: pymatgen
+Requires-Dist: rdkit-pypi
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

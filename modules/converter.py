@@ -1,18 +1,18 @@
 # modules/converter.py
-from pymatgen.core import Structure
+from ase.io import read, write
 import os
 
 def convert_to_pdb():
-    cif_path = input("Enter path to your .cif file: ").strip()
+    cif_path = input("Enter path to your .cif or .mcif file: ").strip()
     out_pdb = input("Enter output PDB filename (e.g., output.pdb): ").strip()
-    
+
     try:
-        struct = Structure.from_file(cif_path)
-        struct.to(filename=out_pdb)
-        print(f"✅ Converted {cif_path} to {out_pdb}")
+        atoms = read(cif_path)  # ASE automatically detects file format
+        write(out_pdb, atoms, format='proteindatabank')  # Save as .pdb
+        print(f"✅ Successfully converted {cif_path} to {out_pdb}")
     except Exception as e:
-        print(f"❌ Error: {e}")
-    input("Press Enter to return to main menu...")
+        print(f"❌ Conversion failed: {e}")
+    input("Press Enter to return to the main menu...")
 
 def clean_pdb():
     pdb_path = input("Enter path to your PDB file: ").strip()
@@ -21,7 +21,7 @@ def clean_pdb():
         for line in f:
             if line.startswith("ATOM") or line.startswith("HETATM"):
                 cleaned.append(line)
-    
+
     out_path = f"cleaned_{os.path.basename(pdb_path)}"
     with open(out_path, 'w') as f:
         f.writelines(cleaned)

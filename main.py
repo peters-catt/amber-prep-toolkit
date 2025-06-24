@@ -1,14 +1,8 @@
 # main.py
-import os
-import sys
-from modules import converter, tleap_generator, utils
+from modules import converter
 
-def clear():
-    os.system("clear" if os.name == "posix" else "cls")
-
-def main_menu():
+def main():
     while True:
-        clear()
         print("=" * 50)
         print("  AMBER Prep Toolkit - Molecular Dynamics Helper")
         print("=" * 50)
@@ -17,7 +11,6 @@ def main_menu():
         print("3. Generate tleap input files")
         print("4. Exit")
         print("=" * 50)
-
         choice = input("Select an option: ")
 
         if choice == "1":
@@ -25,12 +18,12 @@ def main_menu():
         elif choice == "2":
             converter.clean_pdb()
         elif choice == "3":
-            tleap_generator.create_tleap_files()
+            print("🚧 Tleap generator not implemented yet.")
         elif choice == "4":
-            print("Exiting. Goodbye!")
-            sys.exit()
+            break
         else:
-            input("Invalid choice. Press Enter to continue...")
+            print("❌ Invalid choice. Try again.")
 
 if __name__ == "__main__":
-    main_menu()
+    main()
+
