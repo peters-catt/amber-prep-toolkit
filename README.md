@@ -29,6 +29,7 @@ pip install ase PySimpleGUI
 
 ## 🚀 Usage
 
+```bash
 #Launch the toolkit with:
 python main.py
 
