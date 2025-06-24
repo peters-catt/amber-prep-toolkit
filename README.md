@@ -1,6 +1,6 @@
 # 🧪 AMBER Prep Toolkit
 
-PythonベースのコマンドラインおよびGUIアプリケーションで、AMBERを使った分子動力学（MD）シミュレーションを効率化します。 Created by **Weremito Peter**.
+A Python-based command-line and GUI application to streamline molecular dynamics (MD) simulations using AMBER.Created by **Weremito Peter**.
 
 ## ✨ 機能
 
