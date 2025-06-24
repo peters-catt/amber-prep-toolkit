@@ -1,14 +1,14 @@
 # 🧪 AMBER Prep Toolkit
 
-A Python-based command-line and GUI application to streamline molecular dynamics (MD) simulations using AMBER. Created by **Weremito Peter**.
+PythonベースのコマンドラインおよびGUIアプリケーションで、AMBERを使った分子動力学（MD）シミュレーションを効率化します。 Created by **Weremito Peter**.
 
-## ✨ Features
+## ✨ 機能
 
-- 🌀 Convert `.cif` or `.mmCIF` crystal files to `.pdb` (using ASE)
-- 🧼 Clean and repair `.pdb` files
-- 📜 Generate `tleap.in` input files for AMBER
-- 🖼️ Visualize molecules using VMD (optional)
-- 🖱️ GUI-based operation using PySimpleGUI
+- .cif または .mmCIF 結晶ファイルを .pdb に変換（ASE使用）
+- .pdb ファイルのクリーニングと修復
+- AMBER用の tleap.in 入力ファイルを生成
+- 分子の可視化（VMD使用、オプション）
+- PySimpleGUIを使ったGUI操作
 
 ---
 
