@@ -1,5 +1,4 @@
 # 🧪 AMBER Prep Toolkit
-
 A Python-based command-line and GUI application to streamline molecular dynamics (MD) simulations using AMBER.Created by **Weremito Peter**.
 
 ## ✨ Features
